@@ -1,0 +1,45 @@
+@import "../../../../public/styles/shared";
+
+.pokemons-table {
+  ul {
+    padding: 0;
+  }
+  tr {
+    &:hover:not(:first-child) {
+      cursor: pointer;
+      background-color: $gray-blue-light;
+    }
+
+    @media (max-width: $md-breakP) {
+      td {
+        //padding-left: 0 !important;
+        //padding-right: 0 !important;
+      }
+    }
+
+  }
+}
+
+.pagination-pages,
+.pagination-show {
+  padding: 1em;
+  p {
+    margin-right: 2em;
+  }
+  span {
+    margin-right: 1em;
+    &.active {
+      color: $green-light;
+    }
+    &:hover {
+      &:not(.active) {
+        color: $gray-blue-light;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.pagination-show {
+
+}

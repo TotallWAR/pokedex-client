@@ -1,0 +1,23 @@
+@import "../../../public/styles/shared";
+
+header {
+  width: 100%;
+  font-size: 11px;
+  .header {
+    display: flex;
+    height: $header-height;
+    background-color: $green-light;
+    //justify-content: space-between;
+  }
+
+  span {
+    font-size: 1em;
+    margin-right: 1em;
+  }
+
+  @media (min-width: $md-breakP) {
+    font-size: 14px;
+  }
+  @media (min-width: $xl-breakP) {
+  }
+}

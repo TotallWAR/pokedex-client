@@ -1,0 +1,33 @@
+@import "../../../../public/styles/shared";
+
+#logo-svg {
+  position: absolute;
+
+  #P,
+  #O,
+  #K,
+  #E,
+  #M,
+  #O-2,
+  #N,
+  #O-bottom,
+  #blue-contour,
+  #yellow-fill {
+    opacity: 0;
+  }
+
+  @media (min-width: $sm-breakP) {
+    width: 160px;
+    height: 80px;
+  }
+
+  @media (min-width: $md-breakP) {
+    width: 295px;
+    height: 100px;
+  }
+
+  @media (min-width: $xl-breakP) {
+    width: 360px;
+    height: 110px;
+  }
+}

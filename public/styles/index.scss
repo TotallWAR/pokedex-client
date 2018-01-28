@@ -1,0 +1,51 @@
+@charset "UTF-8";
+//
+//FONTS
+//
+@font-face {
+  font-family: 'Formular-Regular';
+  src: url('../fonts/formular/Formular-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Formular-Bold';
+  src: url('../fonts/formular/Formular-Bold.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'Formular-Medium';
+  src: url('../fonts/formular/Formular-Medium.otf') format('otf');
+}
+
+@import "shared";
+@import "custom-bootstrap";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Formular-Regular', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

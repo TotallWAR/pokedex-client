@@ -1,0 +1,86 @@
+@import "../../../../public/styles/shared";
+
+//сама обертка всего контента
+.content {
+  width: 100% !important;
+  height: 100vh;
+  min-height: 100%;
+  max-height: 100%;
+  max-width: none;
+  text-align: center;
+}
+
+@media (min-width: $md-breakP) {
+  .content {
+    width: 55% !important;
+  }
+}
+
+//внутренний контент модального окна
+.registerLayer {
+  h3, p {
+    text-align: left !important;
+  }
+  h3 {
+    font-size: 20px;
+    margin-bottom: 0.8em;
+    color: $black;
+  }
+  p, input {
+    font-size: 12px !important;
+  }
+  label {
+    font-size: 10px !important;
+  }
+
+  //каждый инпут
+  .field-wrapper > div {
+    width: 100% !important;
+  }
+
+  //кнопка отправить
+  .btn-group > div {
+    margin-top: 2em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    //box-shadow: $green-light 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px !important;
+    border: 1px solid $green-light;
+
+    //button {
+    //  background-color: $white !important;
+    //  &:not(:disabled) span {
+    //    color: $green-light !important;
+    //  }
+    //  &:disabled span {
+    //    color: $gray-footer !important;
+    //  }
+    //  &:not(:disabled):hover {
+    //    background-color: $green-light !important;
+    //    cursor: pointer;
+    //    span {
+    //      color: $white !important;
+    //    }
+    //    > div > div {
+    //      background-color: $green-light !important;
+    //    }
+    //  }
+    //}
+  }
+  @media (min-width: $md-breakP) {
+    padding: 2em;
+    h3 {
+      font-size: 32px;
+    }
+    p, input {
+      font-size: 16px !important;
+    }
+    label {
+      font-size: 12px !important;
+    }
+    .btn-group > div {
+      font-size: 16px;
+    }
+  }
+}

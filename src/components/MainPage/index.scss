@@ -1,0 +1,14 @@
+@import "../../../public/styles/shared";
+
+.mainPage {
+  height: calc(100vh - #{$footer-height} - #{$header-height});
+
+  h1 {
+    font-size: 64px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    opacity: 0;
+    color: #212121;
+  }
+}
