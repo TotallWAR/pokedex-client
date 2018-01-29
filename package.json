@@ -13,7 +13,7 @@
     "ajv-keywords": "^2.1.1",
     "animejs": "^2.2.0",
     "axios": "^0.16.2",
-    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap": "^4.0.0",
     "jQuery": "^1.7.4",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4",
