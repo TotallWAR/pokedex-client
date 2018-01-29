@@ -11,7 +11,8 @@ class Logo extends React.Component {
     this.svgDOM = null
   }
   componentDidMount () {
-    if (this.props.routing.locationBeforeTransitions.pathname === '/') {
+    let {routing, auth} = this.props
+    if (routing.locationBeforeTransitions.pathname === '/' && !auth.isAuthenticated) {
     // set sizes of svg
       let scale = 0.5
       let elHeight = this.svgDOM.getBBox().height
@@ -284,13 +285,15 @@ class Logo extends React.Component {
 }
 
 Logo.propTypes = {
-  routing: PropTypes.object
+  routing: PropTypes.object,
+  auth: PropTypes.object
 }
 
 function mapStateToProps (store, ownProps) {
-  const {routing} = store
+  const {routing, auth} = store
   return {
-    routing
+    routing,
+    auth
   }
 }
 
