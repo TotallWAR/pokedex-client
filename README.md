@@ -1,6 +1,8 @@
 # pokedex-client
 Client side of [pokedex app](https://github.com/TotallWAR/pokedex) which is integrated with https://pokeapi.co API
 
+[demo](http://http://35.229.90.40/)
+
 Linted with [eslint standard config](https://github.com/feross/eslint-config-standard)
 
 1. clone repository
